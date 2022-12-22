@@ -1,5 +1,5 @@
-# KERIA
+# Signifi
 
-KERI Agent in the cloud
+Python transcrypt implementation of Signify
 
-Split from KERI Core
+

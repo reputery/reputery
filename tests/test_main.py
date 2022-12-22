@@ -4,7 +4,7 @@ tests.test_main module
 
 """
 
-from keria.cli import main
+from signifi.cli import main
 
 
 def test_main():
