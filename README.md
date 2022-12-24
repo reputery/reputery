@@ -1,5 +1,6 @@
-# PopCred
+# Entwixt
 
-Reputation Network based on KERI in Python
+Identity Graph for KERI in Python
+
 
 

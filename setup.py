@@ -6,14 +6,14 @@ $ python setup.py register sdist upload
 First Time register project on pypi
 https://pypi.org/manage/projects/
 
-$ git remote add popcred https://github.com/popcred/popcred.git
+$ git remote add entwixt https://github.com/entwixt/entwixt.git
 $ git branch -M main
-$ git push -u popcred main
+$ git push -u entwixt main
 
 More secure to use twine to upload
 $ pip3 install twine
 $ python3 setup.py sdist
-$ twine upload dist/popcred-0.0.1.tar.gz
+$ twine upload dist/entwixt-0.0.1.tar.gz
 
 
 Update sphinx /docs
@@ -38,14 +38,14 @@ from setuptools import setup
 
 
 setup(
-    name='popcred',
-    version='0.0.1',  #  also change in src/popcred/__init__.py
+    name='entwixt',
+    version='0.0.1',  #  also change in src/entwixt/__init__.py
     license='Apache Software License 2.0',
-    description='PopCred: Reputation Network based on KERI',
-    long_description=("PopCred: Reputation Network."),
+    description='Entwixt: Identity Graph for KERI',
+    long_description=("Entwixt: Identity Graph."),
     author='Samuel M. Smith',
     author_email='sam@samuelsmith.org',
-    url='https://github.com/WebOfTrust/popcred',
+    url='https://github.com/entwixt/entwixt',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -94,8 +94,8 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'popcred = popcred.cli:main',
-            'popcredd = popcred.daemon:main'
+            'entwixt = entwixt.cli:main',
+            'entwixtd = entwixt.daemon:main'
         ]
     },
 )

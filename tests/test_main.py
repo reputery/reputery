@@ -4,7 +4,7 @@ tests.test_main module
 
 """
 
-from popcred.cli import main
+from entwixt.cli import main
 
 
 def test_main():
