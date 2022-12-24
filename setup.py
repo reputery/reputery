@@ -6,6 +6,9 @@ $ python setup.py register sdist upload
 First Time register project on pypi
 https://pypi.org/manage/projects/
 
+$ git remote add popcred https://github.com/popcred/popcred.git
+$ git branch -M main
+$ git push -u popcred main
 
 More secure to use twine to upload
 $ pip3 install twine
