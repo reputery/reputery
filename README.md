@@ -1,5 +1,5 @@
-# Kerion
+# PopCred
 
-KERI Operational Network Infrastructure in Python
+Reputation Network based on KERI in Python
 
 

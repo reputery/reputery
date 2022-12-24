@@ -4,7 +4,7 @@ tests.test_main module
 
 """
 
-from kerion.cli import main
+from popcred.cli import main
 
 
 def test_main():

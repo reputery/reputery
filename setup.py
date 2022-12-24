@@ -10,7 +10,7 @@ https://pypi.org/manage/projects/
 More secure to use twine to upload
 $ pip3 install twine
 $ python3 setup.py sdist
-$ twine upload dist/kerion-0.0.1.tar.gz
+$ twine upload dist/popcred-0.0.1.tar.gz
 
 
 Update sphinx /docs
@@ -35,14 +35,14 @@ from setuptools import setup
 
 
 setup(
-    name='kerion',
-    version='0.0.1',  #  also change in src/kerion/__init__.py
+    name='popcred',
+    version='0.0.1',  #  also change in src/popcred/__init__.py
     license='Apache Software License 2.0',
-    description='Kerion: KERI Operation Network',
-    long_description=("Kerion: KERI Infrastructure."),
+    description='PopCred: Reputation Network based on KERI',
+    long_description=("PopCred: Reputation Network."),
     author='Samuel M. Smith',
     author_email='sam@samuelsmith.org',
-    url='https://github.com/WebOfTrust/kerion',
+    url='https://github.com/WebOfTrust/popcred',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -91,8 +91,8 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'kerion = kerion.cli:main',
-            'keriond = kerion.daemon:main'
+            'popcred = popcred.cli:main',
+            'popcredd = popcred.daemon:main'
         ]
     },
 )
