@@ -6,7 +6,7 @@ $ python setup.py register sdist upload
 First Time register project on pypi
 https://pypi.org/manage/projects/
 
-$ git remote add mopay https://github.com/mopay/mopay.git
+$ git remote add mopay https://github.com/mopaycash/mopay.git
 $ git branch -M main
 $ git push -u mopay main
 
