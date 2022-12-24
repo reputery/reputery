@@ -10,7 +10,7 @@ https://pypi.org/manage/projects/
 More secure to use twine to upload
 $ pip3 install twine
 $ python3 setup.py sdist
-$ twine upload dist/signifi-0.0.1.tar.gz
+$ twine upload dist/kerion-0.0.1.tar.gz
 
 
 Update sphinx /docs
@@ -35,14 +35,14 @@ from setuptools import setup
 
 
 setup(
-    name='signifi',
-    version='0.0.1',  #  also change in src/signifi/__init__.py
+    name='kerion',
+    version='0.0.1',  #  also change in src/kerion/__init__.py
     license='Apache Software License 2.0',
-    description='KERIA: KERI Agent in the cloud',
-    long_description=("KERIA: KERI Agent in the cloud."),
+    description='Kerion: KERI Operation Network',
+    long_description=("Kerion: KERI Infrastructure."),
     author='Samuel M. Smith',
     author_email='sam@samuelsmith.org',
-    url='https://github.com/WebOfTrust/signifi',
+    url='https://github.com/WebOfTrust/kerion',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -91,8 +91,8 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'signifi = signifi.cli:main',
-            'signifid = signifi.daemon:main'
+            'kerion = kerion.cli:main',
+            'keriond = kerion.daemon:main'
         ]
     },
 )

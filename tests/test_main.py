@@ -4,7 +4,7 @@ tests.test_main module
 
 """
 
-from signifi.cli import main
+from kerion.cli import main
 
 
 def test_main():

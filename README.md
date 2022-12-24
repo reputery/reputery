@@ -1,5 +1,5 @@
-# Signifi
+# Kerion
 
-Python transcrypt implementation of Signify
+KERI Operational Network Infrastructure in Python
 
 
