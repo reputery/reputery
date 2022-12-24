@@ -6,14 +6,14 @@ $ python setup.py register sdist upload
 First Time register project on pypi
 https://pypi.org/manage/projects/
 
-$ git remote add entwixt https://github.com/entwixt/entwixt.git
+$ git remote add mopay https://github.com/mopay/mopay.git
 $ git branch -M main
-$ git push -u entwixt main
+$ git push -u mopay main
 
 More secure to use twine to upload
 $ pip3 install twine
 $ python3 setup.py sdist
-$ twine upload dist/entwixt-0.0.1.tar.gz
+$ twine upload dist/mopay-0.0.1.tar.gz
 
 
 Update sphinx /docs
@@ -38,14 +38,14 @@ from setuptools import setup
 
 
 setup(
-    name='entwixt',
-    version='0.0.1',  #  also change in src/entwixt/__init__.py
+    name='mopay',
+    version='0.0.1',  #  also change in src/mopay/__init__.py
     license='Apache Software License 2.0',
-    description='Entwixt: Identity Graph for KERI',
-    long_description=("Entwixt: Identity Graph."),
+    description='MoPay: Mobile Payment Card',
+    long_description=("MoPay: Mobile Payment Card using Electronic Money Clips and Checks."),
     author='Samuel M. Smith',
     author_email='sam@samuelsmith.org',
-    url='https://github.com/entwixt/entwixt',
+    url='https://github.com/mopay/mopay',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -94,8 +94,8 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'entwixt = entwixt.cli:main',
-            'entwixtd = entwixt.daemon:main'
+            'mopay = mopay.cli:main',
+            'mopayd = mopay.daemon:main'
         ]
     },
 )

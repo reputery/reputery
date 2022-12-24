@@ -1,6 +1,12 @@
-# Entwixt
+# MoPay
 
-Identity Graph for KERI in Python
+Mobile Payment System
+
+Payment Card
+Electronic Money Clip
+Electronic Checks
+
+Using XORA (XOR Accumulators)
 
 
 

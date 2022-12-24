@@ -4,7 +4,7 @@ tests.test_main module
 
 """
 
-from entwixt.cli import main
+from mopay.cli import main
 
 
 def test_main():
