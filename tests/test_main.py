@@ -4,7 +4,7 @@ tests.test_main module
 
 """
 
-from mopay.cli import main
+from reputery.cli import main
 
 
 def test_main():

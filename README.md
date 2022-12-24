@@ -1,12 +1,9 @@
-# MoPay
+# Reputery
 
-Mobile Payment System
+Open Reputation Processor
 
-Payment Card
-Electronic Money Clip
-Electronic Checks
+Authentic Reputation Algorithms using Authentic Data and AI
 
-Using XORA (XOR Accumulators)
 
 
 

@@ -6,14 +6,14 @@ $ python setup.py register sdist upload
 First Time register project on pypi
 https://pypi.org/manage/projects/
 
-$ git remote add mopay https://github.com/mopaycash/mopay.git
+$ git remote add reputery https://github.com/reputery/reputery.git
 $ git branch -M main
-$ git push -u mopay main
+$ git push -u reputery main
 
 More secure to use twine to upload
 $ pip3 install twine
 $ python3 setup.py sdist
-$ twine upload dist/mopay-0.0.1.tar.gz
+$ twine upload dist/reputery-0.0.1.tar.gz
 
 
 Update sphinx /docs
@@ -38,14 +38,14 @@ from setuptools import setup
 
 
 setup(
-    name='mopay',
-    version='0.0.1',  #  also change in src/mopay/__init__.py
+    name='reputery',
+    version='0.0.1',  #  also change in src/reputery/__init__.py
     license='Apache Software License 2.0',
-    description='MoPay: Mobile Payment Card',
-    long_description=("MoPay: Mobile Payment Card using Electronic Money Clips and Checks."),
+    description='Reputery: Open Reputation Processor',
+    long_description=("Reputery: Open Reputation AI Processor."),
     author='Samuel M. Smith',
     author_email='sam@samuelsmith.org',
-    url='https://github.com/mopay/mopay',
+    url='https://github.com/reputery/reputery',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -94,8 +94,8 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'mopay = mopay.cli:main',
-            'mopayd = mopay.daemon:main'
+            'reputery = reputery.cli:main',
+            'reputeryd = reputery.daemon:main'
         ]
     },
 )
